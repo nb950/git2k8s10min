@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: powerflex-app-config
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/nb950/git2k8s10min.git
+    targetRevision: main
+    path: git2k8s10min/config
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: powerflex-app
+  syncPolicy:
+    automated: 
+      prune: true 
+      selfHeal: true 
+      allowEmpty: false 
+    syncOptions:
+    - CreateNamespace=true
+    - PruneLast=true

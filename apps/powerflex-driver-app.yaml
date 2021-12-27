@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: powerflex-app-driver
+  namespace: argocd
+  finalizers:
+  - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: powerflex-app
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: git2k8s10min/powerflex-driver
+    repoURL: https://github.com/nb950/git2k8s10min.git
+    targetRevision: main
+    helm:
+      valueFiles:
+        - values.yaml
+  syncPolicy:
+    automated: 
+      prune: true 
+      selfHeal: true 
+      allowEmpty: false 
+    syncOptions:
+    - CreateNamespace=true
+    - PruneLast=true

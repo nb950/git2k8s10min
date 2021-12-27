@@ -1,0 +1,8 @@
+apiVersion: v1
+data:
+  config: LSB1c2VybmFtZTogImJsYWgiCiAgcGFzc3dvcmQ6ICJibGFoIgogIHN5c3RlbUlEOiAiNGQ0YTJlNWEzNjA4MGUwZiIKICBlbmRwb2ludDogImh0dHBzOi8vbG9jYWxob3N0Ojk0MDAiCiAgc2tpcENlcnRpZmljYXRlVmFsaWRhdGlvbjogdHJ1ZSAKICBpc0RlZmF1bHQ6IHRydWUKICBtZG06ICIxMC4yNDcuMzguNDEsMTAuMjQ3LjM4LjQ0Igo=
+  MDM: MTAuMjQ3LjM4LjQxLDEwLjI0Ny4zOC40NAo=
+kind: Secret
+metadata:
+  name: powerflex-app-driver-config
+type: Opaque

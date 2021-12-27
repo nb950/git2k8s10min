@@ -1,0 +1,29 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: csm
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  generators:
+  - git:
+      repoURL:  https://github.com/nb950/git2k8s10min.git
+      targetRevision: main
+      directories:
+      - path: powerflex-auth/apps
+      - path: powerflex-auth/karavi
+  template:
+    metadata:
+      name: '{{path.basename}}'
+    spec:
+      project: default
+      source:
+        repoURL: https://github.com/nb950/git2k8s10min.git
+        targetRevision: main
+        path: '{{path}}'
+      destination:
+        server: https://kubernetes.default.svc
+        namespace: argocd
+        #namespace: '{{path.basename}}'
+      syncPolicy:
+        automated: {}

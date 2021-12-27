@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  rootCertificate.pem: ""
+kind: Secret
+metadata:
+  name: proxy-server-root-certificate
+type: Opaque
