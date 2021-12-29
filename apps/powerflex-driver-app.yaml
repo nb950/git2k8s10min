@@ -11,7 +11,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: git2k8s10min/powerflex-driver
+    path: powerflex-driver
     repoURL: https://github.com/nb950/git2k8s10min.git
     targetRevision: master
     helm:

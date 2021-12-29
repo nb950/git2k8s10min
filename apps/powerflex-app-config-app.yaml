@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/nb950/git2k8s10min.git
     targetRevision: master
-    path: git2k8s10min/config
+    path: config
   destination:
     server: https://kubernetes.default.svc
     namespace: powerflex-app
