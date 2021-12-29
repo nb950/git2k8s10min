@@ -9,7 +9,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/nb950/git2k8s10min.git
-    targetRevision: main
+    targetRevision: master
     path: git2k8s10min/config
   destination:
     server: https://kubernetes.default.svc

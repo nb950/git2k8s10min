@@ -13,7 +13,7 @@ spec:
   source:
     path: git2k8s10min/powerflex-driver
     repoURL: https://github.com/nb950/git2k8s10min.git
-    targetRevision: main
+    targetRevision: master
     helm:
       valueFiles:
         - values.yaml
