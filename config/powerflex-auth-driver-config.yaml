@@ -5,4 +5,5 @@ data:
 kind: Secret
 metadata:
   name: powerflex-app-driver-config
+  namespace: vxflexos
 type: Opaque

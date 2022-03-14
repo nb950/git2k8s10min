@@ -2,6 +2,7 @@ apiVersion: v1
 kind: Secret
 metadata:
   name: proxy-authz-tokens
+  namespace: vxflexos
 type: Opaque
 data:
   access: ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SmhkV1FpT2lKcllYSmhkbWtpTENKbGVIQWlPakUyTkRjeU56STVNelFzSW1keWIzVndJam9pWm05dklpd2lhWE56SWpvaVkyOXRMbVJsYkd3dWEyRnlZWFpwSWl3aWNtOXNaWE1pT2lKaVlYSWlMQ0p6ZFdJaU9pSnJZWEpoZG1rdGRHVnVZVzUwSW4wLlVMUU1tbEVJYXl1RFBGLUxrUU41YTF3TklqQnRpTVJwY2pya1RHelFuYU0=

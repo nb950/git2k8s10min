@@ -4,4 +4,5 @@ data:
 kind: Secret
 metadata:
   name: karavi-authorization-config
+  namespace: vxflexos
 type: Opaque
