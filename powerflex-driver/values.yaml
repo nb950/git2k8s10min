@@ -218,7 +218,7 @@ authorization:
 
   # proxyHost: hostname of the csm-authorization server
   # Default value: None
-  proxyHost: lglap074.lss.emc.com
+  proxyHost: lglap155.lss.emc.com
 
   # skipCertificateValidation: certificate validation of the csm-authorization server
   # Allowed Values:
