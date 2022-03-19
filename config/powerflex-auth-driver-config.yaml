@@ -4,6 +4,6 @@ data:
   MDM: MTAuMjQ3LjM4LjQxLDEwLjI0Ny4zOC40NAo=
 kind: Secret
 metadata:
-  name: powerflex-app-driver-config
+  name: vxflexos-config
   namespace: vxflexos
 type: Opaque
